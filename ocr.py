@@ -6,6 +6,11 @@ import pytesseract
 import argparse
 import cv2
 import os
+
+
+# Add location of Pytesseract installed 
+pytesseract.pytesseract.tesseract_cmd = r'D:/Tesseract-OCR/tesseract.exe'
+
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
